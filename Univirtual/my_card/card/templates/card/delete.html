@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+{% block content %}
+<div class="container">
+    <h1>Enter the primary key of the row you want to delete</h1>
+    <div>
+    <form action=" " method='POST'>
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="pk">Primary Key: </label>
+            <input class="form-control" type="text" name="pk" id="pk">
+            <input class="form-control" type="submit" value = "Delete" >
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+#Esta vista por el momento esta inactiva pero si se requiere solo es activar un link con el nombre
+#de eliminar.

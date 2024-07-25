@@ -1,0 +1,117 @@
+/* Estilos para la sección de descripción */
+.descripcion {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .descripcion p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para las listas de habilidades e intereses */
+  .listas {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+  }
+  
+  .lis1, .lis2 {
+    width: 45%;
+  }
+  
+  .lis1 h3, .lis2 h3 {
+    margin-bottom: 15px;
+  }
+  
+  .lis1 ul, .lis2 ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .lis1 li, .lis2 li {
+    margin-bottom: 8px;
+  }
+  
+  /* Estilos para la tabla de contactos */
+  .contact {
+    margin-top: 30px;
+  }
+  
+  .contact table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .contact th, .contact td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .contact th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para la navegación */
+  .navbar {
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navbar a:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos para dispositivos móviles (Responsive) */
+  @media (max-width: 768px) {
+    .listas {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .lis1, .lis2 {
+      width: 100%;
+    }
+  }
+  /* Estilos para las listas de habilidades e intereses */
+.listas {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .lis1, .lis2 {
+    width: 20%;
+    text-align: left;
+  }
+  
+  .lis1 {
+    margin-right: 10px; /* Agregar un margen para separar las listas */
+  }
+  
+  .lis1 h3, .lis2 h3 {
+    margin-bottom: 15px;
+  }
+  
+  .lis1 ul, .lis2 ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0; /* Eliminar el margen predeterminado de las listas */
+  }
+  
+  .lis1 li, .lis2 li {
+    margin-bottom: 8px;
+  }
+
+  .rounded-image {
+    border-radius: 50%;
+    overflow: hidden; 
+  }
+ 
