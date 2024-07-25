@@ -45,5 +45,5 @@ def delete(request):
     
 def acerca(request):
     return render(request, 'card/acerca.html')
-    
+
     
