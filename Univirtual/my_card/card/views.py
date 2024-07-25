@@ -4,27 +4,32 @@ from .models import Card
 
 def list(request):
     all_cards = models.Card.objects.all()
-
-    # Anonimizar los correos electrónicos
-    #for card in all_cards:
-        #card.email = card.email[:3] + '...' + card.email.split('@')[-1]
-
     context = {'all_cards': all_cards}
     return render(request, 'card/list.html', context=context)
-
 
 def add(request):
     if request.method == 'POST':
         name = request.POST['name']
-        email = request.POST['email']
+        excel_file = request.POST['excel_file']
         
-        new_card = Card(name=name, email=email)
+        new_card = Card(name=name, excel_file=excel_file)
         new_card.save()
         
         return redirect('card:list')
     else:
         return render(request, 'card/add.html')
 
+def add(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        excel_file = request.POST['excel_file']
+        
+        new_card = Card(name=name, excel_file=excel_file)
+        new_card.save()
+        
+        return redirect('card:list')
+    else:
+        return render(request, 'card/acerca.html')
 
 def delete(request):
     if request.method == 'POST':

@@ -9,14 +9,14 @@
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Email</th>
+                <th>Upluaded files</th>
             </tr>
         </thead>
         <tbody>
             {% for card in all_cards %}
             <tr>
                 <td>{{ card.name }}</td>
-                <td>{{ card.email }}</td>
+                <td>{{ card.files }}</td>
             </tr>
             {% endfor %}
         </tbody>

@@ -1,8 +1,34 @@
-{% extends 'acerca.html' %}
+{% extends "acerca.html" %}
 {% load static %}
-   
 {% block content %}
 <br>
 <br>
-    <img class="rounded-image" src="{% static 'my_app/me.jpg' %}" alt="Juan Pablo" width="300" height="300">
+<div class="container">
+    <img class="rounded-image" src="{% static 'my_app/me.jpg' %}" alt="Juan Pablo" width="150" height="150">
+    <p>
+        <br>
+        <br>
+        Espacio para subir datos de los profesores.
+    </p>
+    <h1>Sube solo archivos tipo Excel</h1>
+    <form action="" method='POST'>
+    
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="name">Profesor:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+        </div>
+
+        <div class="form-group">
+            <label for="excel_file">File:</label>
+            <input type="file" class="form-control" id="excel_file" name="excel_file" placeholder="excel_file" required>
+        </div>
+
+        <div>
+        <br>
+        <input class="btn btn-primary" type="submit" value="Enviar"> 
+        </div>
+    </form>
+</div>
 {% endblock %}

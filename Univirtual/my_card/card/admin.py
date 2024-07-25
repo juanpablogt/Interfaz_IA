@@ -2,8 +2,8 @@ from django.contrib import admin
 from .models import Card
 
 class CardAdmin(admin.ModelAdmin):
-    fieldsets = [('Datos de la persona', {'fields': ['name', 'email', 'mensaje']})]
-    list_display = ('name', 'email', 'mensaje')
+    fieldsets = [('Datos de la persona', {'fields': ['name', 'excel_file']})]
+    list_display = ('name', 'excel_file')
     list_filter = ['name']
     search_fields = ['name']
 
