@@ -19,7 +19,7 @@ def add(request):
     else:
         return render(request, 'card/add.html')
 
-def add(request):
+def acerca(request):
     if request.method == 'POST':
         name = request.POST['name']
         excel_file = request.POST['excel_file']
